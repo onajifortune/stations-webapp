@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Cross, Moon, Sun } from 'lucide-react'
+import { Cross, Moon, Sun, ChevronDown } from 'lucide-react'
 
 const stations = [
   {
@@ -102,24 +102,24 @@ const stations = [
     response: 'Because by your holy cross you have redeemed the world',
     reading: 'LUKE 23:27-31',
     scripture: 'And there followed him a great multitude of the people and of women who were mourning and lamenting for him. But Jesus turning to them said, "Daughters of Jerusalem, do not weep for me, but weep for yourselves and for your children."',
-    christSpeaks: 'Do not waste your tears on me, for my suffering has meaning and purpose. Rather, weep for the blindness that resists redemption, for the hardness of heart that refuses love. Your tears matter; direct them toward salvation.',
-    manResponds: 'Jesus, teach me to weep with those who weep, but also to point them toward hope. Help me to be an instrument of consolation while remaining focused on eternal truths. Let my tears water the seeds of faith.',
+    christSpeaks: 'Do not weep for me alone. Your tears are precious, but look beyond this moment. See the greater truth: that in my suffering, all suffering finds meaning and redemption.',
+    manResponds: 'Jesus, teach me to weep with those who weep, yet never to despair. Help me understand that suffering, when united with Yours, becomes a path to grace. Transform my tears into prayers of trust.',
     finalVersicle: 'Have mercy on us O Lord',
     finalResponse: 'Have mercy on us',
-    hymn: 'For us and for our salvation He hung upon the tree.',
+    hymn: 'Weep not for sorrow\'s fleeting pain, but for the love that breaks the chain.',
   },
   {
     number: 9,
     title: 'JESUS FALLS FOR THE THIRD TIME',
     versicle: 'We adore you, O Christ, and we Praise you.',
     response: 'Because by your holy cross you have redeemed the world',
-    reading: 'PROVERBS 24:16',
-    scripture: 'For the righteous falls seven times and rises again, but the wicked stumble in times of calamity.',
-    christSpeaks: 'This final fall is my final surrender. I have given all; I have held nothing back. In absolute poverty of spirit, stripped of all worldly power, I am ready. My weakness becomes the vessel of infinite strength.',
-    manResponds: 'Dearest Jesus, You have stripped away everything that stood between You and Your Father\'s will. Help me to reach that same state of complete surrender, that my life might become an offering of love.',
+    reading: 'PHILIPPIANS 2:5-8',
+    scripture: 'Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but emptied himself, taking the form of a servant, being born in the likeness of men.',
+    christSpeaks: 'I fall a final time, stripped of all strength save trust in my Father. This is the depth of my love for you: to surrender completely, to become nothing so you might become everything in me.',
+    manResponds: 'Lord Jesus, You showed me that emptiness, when surrendered to God, is fullness. Help me to die to self, to let go of pride and attachment, that I might rise in Your resurrection and live in Your love.',
     finalVersicle: 'Have mercy on us O Lord',
     finalResponse: 'Have mercy on us',
-    hymn: 'All is surrendered, all is laid at the foot of Calvary\'s tree.',
+    hymn: 'Three times fallen, three times risen, grace renewed at each decision.',
   },
   {
     number: 10,
@@ -128,248 +128,258 @@ const stations = [
     response: 'Because by your holy cross you have redeemed the world',
     reading: 'PSALM 22:18',
     scripture: 'They divide my garments among them, and for my clothing they cast lots.',
-    christSpeaks: 'Stripped bare before the world, I stand in utter poverty. Yet this nakedness is not shame but ultimate truth. What I am cannot be stripped away. My identity as the Beloved of the Father remains untouched by cruelty.',
-    manResponds: 'Jesus, in Your stripping lies my freedom. Release me from the illusion that my worth comes from what I possess or how others see me. Help me to know that I am loved not for what I have, but for who I am in You.',
+    christSpeaks: 'Stripped of all dignity, I stand naked before my executioners. Yet in this nakedness, I am most truly myself—vulnerable love, exposed compassion, the heart of God laid bare for humanity.',
+    manResponds: 'Jesus, help me to release my pride and self-image. Teach me that true strength lies in vulnerability, that love is not diminished but magnified when we stand defenseless before one another and before God.',
     finalVersicle: 'Have mercy on us O Lord',
     finalResponse: 'Have mercy on us',
-    hymn: 'Naked He hangs upon the tree, naked so that we are free.',
+    hymn: 'Stripped bare of all but love\'s pure flame, Your naked heart speaks Your name.',
   },
   {
     number: 11,
     title: 'JESUS IS CRUCIFIED',
     versicle: 'We adore you, O Christ, and we Praise you.',
     response: 'Because by your holy cross you have redeemed the world',
-    reading: 'JOHN 19:28-30',
-    scripture: 'After this, Jesus, knowing that all was now finished, said (to fulfill the scripture), "I thirst." A jar full of sour wine stood there, so they put a sponge full of the sour wine on a hyssop branch and held it to his mouth. When Jesus had received the sour wine, he said, "It is finished," and he bowed his head and gave up his spirit.',
-    christSpeaks: 'I am raised high that all might see. My arms extended in love, I embrace all of humanity. I drink the cup of suffering to its dregs, that you might drink of salvation. It is finished. The work is complete.',
-    manResponds: 'My Jesus, my God, I stand before Your Cross overwhelmed. How can I comprehend such love? How can I repay what You have given? Accept my gratitude, my sorrow for my sins, my commitment to follow You in love. At Your Cross, I am remade.',
+    reading: 'JOHN 19:18',
+    scripture: 'There they crucified him, and with him two others, one on either side, and Jesus between them.',
+    christSpeaks: 'Nailed to this wood, I am lifted up. In this moment of ultimate rejection, I embrace all of humanity. Every pain finds home in my heart. Every loneliness is met with my presence. This is love made manifest.',
+    manResponds: 'Crucified Jesus, I contemplate the depths of Your love. Help me to understand that You did not come to explain suffering but to transform it. In Your agony, all human agony finds redemption and hope.',
     finalVersicle: 'Have mercy on us O Lord',
     finalResponse: 'Have mercy on us',
-    hymn: 'O Christ, upon the cruel tree you hung and bled for you and me.',
+    hymn: 'O Lord, upon the cross they hung, and by that death the world was won.',
   },
   {
     number: 12,
     title: 'JESUS DIES ON THE CROSS',
     versicle: 'We adore you, O Christ, and we Praise you.',
     response: 'Because by your holy cross you have redeemed the world',
-    reading: 'ROMANS 6:9',
-    scripture: 'We know that Christ, being raised from the dead, will never die again. Death no longer has dominion over him.',
-    christSpeaks: 'The final breath is drawn, yet it is not ending but completion. I have tasted death so that you need never fear it. My death becomes your life, my weakness becomes your strength.',
-    manResponds: 'Jesus, by Your death, You have defeated death. By Your sacrifice, You have opened the way. I thank You for Your love, manifested in the extremity of Your suffering. May I never forget that I am loved this deeply.',
+    reading: 'JOHN 19:28-30',
+    scripture: 'When Jesus had received the sour wine, he said, "It is finished," and he bowed his head and gave up his spirit.',
+    christSpeaks: 'My work is complete. The infinite love that upheld creation now enters the gates of death to transform them. I die so you might live. I descend into darkness so you might walk always in light.',
+    manResponds: 'Jesus, as I contemplate Your death, I recognize my own need to let go, to surrender my will completely to the Father\'s. Grant me the faith to trust that in death with You, I shall rise in glory.',
     finalVersicle: 'Have mercy on us O Lord',
     finalResponse: 'Have mercy on us',
-    hymn: 'O death, where is your sting? Where is your victory? Christ has conquered you.',
+    hymn: 'It is finished—love\'s great work is done. The salvation of the world is won.',
   },
   {
     number: 13,
     title: 'JESUS IS TAKEN DOWN FROM THE CROSS',
     versicle: 'We adore you, O Christ, and we Praise you.',
     response: 'Because by your holy cross you have redeemed the world',
-    reading: 'MATTHEW 27:57-61',
-    scripture: 'When it was evening, there came a rich man from Arimathea, named Joseph, who also was a disciple of Jesus. He went to Pilate and asked for the body of Jesus. Then Pilate ordered it to be given to him. And Joseph took the body and wrapped it in a clean linen shroud, and laid it in his own new tomb.',
-    christSpeaks: 'Joseph receives my body with tenderness. In this final care, I am honored not as a king but as a beloved son. Every sorrow is held with love. Every broken thing matters.',
-    manResponds: 'Jesus, in Your death, I see tenderness beyond measure. Help me to handle gently the broken things of this world—broken hearts, broken dreams, broken relationships—knowing that nothing lies beyond Your redeeming love.',
+    reading: 'JOHN 19:38-40',
+    scripture: 'After these things Joseph of Arimathea, who was a disciple of Jesus, but secretly for fear of the Jews, asked Pilate that he might take away the body of Jesus, and Pilate gave him permission. So he came and took away his body.',
+    christSpeaks: 'Even in death, I am held with love. Gently, reverently, hands that believe in me lay me to rest. And you too shall know this tenderness, this compassion that honors even the broken and the fallen.',
+    manResponds: 'Jesus, as Your body was treated with love and respect in death, teach me to see the dignity in all people, to handle the fragile and suffering with reverence, knowing You dwell within them.',
     finalVersicle: 'Have mercy on us O Lord',
     finalResponse: 'Have mercy on us',
-    hymn: 'In the tomb so dark and deep, watch does Joseph keep.',
+    hymn: 'Gently laid within the tomb, death is now Your dwelling room.',
   },
   {
     number: 14,
-    title: 'JESUS IS LAID IN THE SEPULCHER',
+    title: 'JESUS IS LAID IN THE TOMB',
     versicle: 'We adore you, O Christ, and we Praise you.',
     response: 'Because by your holy cross you have redeemed the world',
-    reading: 'JOHN 11:25-26',
-    scripture: 'Jesus said to her, "I am the resurrection and the life. Whoever believes in me, though he die, yet shall he live, and everyone who lives and believes in me shall never die."',
-    christSpeaks: 'The stone is rolled into place. Darkness covers the tomb. Yet beneath the stone lies the seed of new creation. Rest with me in the tomb, for in the depths of death lies the hope of resurrection.',
-    manResponds: 'Jesus, from the tomb comes hope eternal. As You rose on the third day, I believe in resurrection—not just in the distant future, but in the transformation of my heart beginning here and now. Help me to die to my old self, that You might raise me up new.',
+    reading: 'MATTHEW 27:59-66',
+    scripture: 'And Joseph took the body and wrapped it in a clean linen shroud and laid it in his own new tomb, which he had hewn in the rock; and he rolled a great stone to the entrance of the tomb.',
+    christSpeaks: 'In this tomb, I rest as all must rest. But know this—death has no power over me. I enter this darkness that you might never walk there alone. In three days, you shall see the light of resurrection.',
+    manResponds: 'Jesus, in the silence of the tomb, I place my trust. You have walked the way of suffering and death before me. Help me to live each day with the hope of resurrection, knowing that Your love transforms all endings into new beginnings.',
     finalVersicle: 'Have mercy on us O Lord',
     finalResponse: 'Have mercy on us',
-    hymn: 'Life for the world, you suffered and died, death now devours the death that defied.',
+    hymn: 'The stone is rolled, the Lord lies still, yet life shall rise to claim His will.',
   },
 ]
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(false)
-  const [mounted, setMounted] = useState(false)
-  const [expandedStation, setExpandedStation] = useState<number | null>(null)
+  const [darkMode, setDarkMode] = useState(false)
+  const [expandedStations, setExpandedStations] = useState<number[]>([])
 
   useEffect(() => {
-    setMounted(true)
-    const savedTheme = localStorage.getItem('theme-preference')
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const isDarkMode = savedTheme === 'dark' || (savedTheme === null && prefersDark)
-    setIsDark(isDarkMode)
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark')
-    }
+    const saved = localStorage.getItem('darkMode')
+    if (saved) setDarkMode(JSON.parse(saved))
   }, [])
 
-  const toggleDarkMode = () => {
-    const newDarkMode = !isDark
-    setIsDark(newDarkMode)
-    if (newDarkMode) {
+  useEffect(() => {
+    localStorage.setItem('darkMode', JSON.stringify(darkMode))
+    if (darkMode) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
     }
-    localStorage.setItem('theme-preference', newDarkMode ? 'dark' : 'light')
-  }
+  }, [darkMode])
 
-  if (!mounted) {
-    return null
+  const toggleStation = (number: number) => {
+    setExpandedStations(prev =>
+      prev.includes(number)
+        ? prev.filter(n => n !== number)
+        : [...prev, number]
+    )
   }
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="sticky top-0 z-40 border-b border-border/40 bg-background/95 backdrop-blur-sm">
-        <div className="mx-auto max-w-4xl px-6 py-8">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Cross className="h-8 w-8 text-accent" />
-              <div>
-                <h1 className="text-2xl font-serif font-light tracking-wide">Stations of the Cross</h1>
-                <p className="text-sm text-muted-foreground">A contemplative journey</p>
-              </div>
-            </div>
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-lg border border-border/40 hover:border-accent/50 transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {isDark ? (
-                <Sun className="h-5 w-5 text-accent" />
-              ) : (
-                <Moon className="h-5 w-5 text-foreground/70" />
-              )}
-            </button>
+      <header className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur-sm">
+        <div className="mx-auto max-w-4xl px-6 py-6 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Cross className="h-6 w-6 text-accent" />
+            <h1 className="text-xl font-serif font-light tracking-wide">Stations of the Cross</h1>
           </div>
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="p-2 rounded-lg hover:bg-secondary/10 transition-colors"
+            aria-label="Toggle dark mode"
+          >
+            {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+          </button>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="mx-auto max-w-4xl px-6 py-16">
-        <div className="mb-16 text-center">
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            The Stations of the Cross invite us to walk with Jesus on His path to Calvary. Take time to pause at each station, reflect on His love, and discover what His sacrifice means for your life. Click each station to explore.
-          </p>
-        </div>
+      <main className="mx-auto max-w-4xl px-6 py-12">
+        {/* Introduction */}
+        <section className="mb-20 pb-12 border-b border-border/40">
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-sm uppercase tracking-widest text-accent mb-6">Introduction</h2>
+              <p className="text-center text-muted-foreground mb-4">In the name of the Father, and of the Son and of the Holy Spirit. Amen.</p>
+            </div>
+
+            <div className="bg-card/50 rounded-lg p-8 border border-border/40">
+              <h3 className="text-sm uppercase tracking-widest text-accent mb-4">Christ Speaks</h3>
+              <p className="font-serif text-lg leading-relaxed text-foreground">
+                These fourteen steps you are about to walk, you do not take alone. I am with you, we are truly one. And therefore my way of the cross, two thousand years ago and your own "way" now are also one. Yet there is a difference; my life was incomplete until crowned it with my death. Your fourteen steps will not be complete until you crown them with your life.
+              </p>
+            </div>
+
+            <div className="bg-card/50 rounded-lg p-8 border border-border/40">
+              <h3 className="text-sm uppercase tracking-widest text-accent mb-4">Man Responds</h3>
+              <p className="font-serif text-lg leading-relaxed text-foreground">
+                My Lord Jesus Christ, you walked this road of suffering even to your death. You did this for me. and yet I have so often failed to love of you by my sins. Now I want to love you with all my heart and to turn away from everything that offends you. Pardon me my God. Allow me to follow you on this journey. You went out to die for love of me. give me the courage and the faith to be able to die with love of you whenever the right time comes. I want to live and die always united to you, Amen.
+              </p>
+            </div>
+
+            <div className="border-l-2 border-accent/50 pl-6">
+              <p className="font-serif italic text-foreground">
+                At the Cross her station keeping,<br />
+                stood the mournful mother weeping<br />
+                close to Jesus to the last.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Stations */}
-        <div className="space-y-8">
+        <section className="mb-20 space-y-4">
           {stations.map((station) => (
             <div
               key={station.number}
-              className="group rounded-lg border border-border/60 bg-card p-8 transition-all duration-300 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/10 cursor-pointer overflow-hidden"
-              onClick={() => setExpandedStation(expandedStation === station.number ? null : station.number)}
+              className="border border-border/40 rounded-lg overflow-hidden hover:border-border/80 transition-colors"
             >
-              {/* Station Header */}
-              <div className="flex items-start justify-between gap-6">
-                <div className="flex-1">
-                  <div className="mb-2">
-                    <span className="inline-block text-xs font-semibold tracking-widest text-accent/70 uppercase">
-                      Station {station.number}
-                    </span>
-                  </div>
-                  <h2 className="font-serif text-2xl font-light leading-snug mb-4 text-balance">
-                    {station.title}
-                  </h2>
-                  <div className="space-y-2 text-sm text-muted-foreground">
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold min-w-fit">V.</span>
-                      <span className="text-foreground/75">{station.versicle}</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold min-w-fit">R.</span>
-                      <span className="text-foreground/75">{station.response}</span>
-                    </div>
+              <button
+                onClick={() => toggleStation(station.number)}
+                className="w-full px-6 py-6 bg-card/50 hover:bg-card transition-colors flex items-center justify-between gap-4"
+              >
+                <div className="flex-1 text-left">
+                  <div className="flex items-baseline gap-3 mb-2">
+                    <span className="text-sm font-semibold text-accent">Station {station.number}</span>
+                    <h3 className="text-lg font-serif font-light">{station.title}</h3>
                   </div>
                 </div>
-                <div className={`flex-shrink-0 text-muted-foreground/50 group-hover:text-accent/70 transition-all duration-300 ${expandedStation === station.number ? 'rotate-90' : ''}`}>
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
+                <ChevronDown
+                  className={`h-5 w-5 text-muted-foreground transition-transform ${
+                    expandedStations.includes(station.number) ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
 
-              {/* Expanded Content */}
-              {expandedStation === station.number && (
-                <div className="mt-8 pt-8 border-t border-border/40 space-y-8 animate-in fade-in duration-300">
+              {expandedStations.includes(station.number) && (
+                <div className="px-6 py-8 bg-background border-t border-border/40 space-y-6">
+                  {/* Opening Versicle and Response */}
+                  <div className="space-y-2">
+                    <p className="text-sm"><span className="font-semibold">V.</span> {station.versicle}</p>
+                    <p className="text-sm"><span className="font-semibold">R.</span> {station.response}</p>
+                  </div>
+
                   {/* Reading */}
-                  <div>
-                    <h3 className="font-serif text-sm font-semibold tracking-widest text-accent/80 uppercase mb-3">
-                      {station.reading}
-                    </h3>
-                    <p className="font-serif text-foreground/85 leading-relaxed text-base italic">
-                      {station.scripture}
-                    </p>
+                  <div className="space-y-3 bg-card/30 rounded-lg p-4 border border-border/40">
+                    <h4 className="text-sm font-semibold uppercase tracking-widest text-accent">Reading: {station.reading}</h4>
+                    <p className="font-serif leading-relaxed text-foreground">{station.scripture}</p>
                   </div>
 
                   {/* Christ Speaks */}
-                  <div className="bg-accent/5 border border-accent/30 rounded-lg p-6">
-                    <h3 className="font-serif text-sm font-semibold tracking-widest text-accent/80 uppercase mb-4">
-                      CHRIST SPEAKS
-                    </h3>
-                    <p className="text-foreground/85 leading-relaxed">
-                      {station.christSpeaks}
-                    </p>
+                  <div className="space-y-3 bg-card/30 rounded-lg p-4 border border-border/40">
+                    <h4 className="text-sm font-semibold uppercase tracking-widest text-accent">Christ Speaks</h4>
+                    <p className="font-serif leading-relaxed text-foreground">{station.christSpeaks}</p>
                   </div>
 
                   {/* Man Responds */}
-                  <div>
-                    <h3 className="font-serif text-sm font-semibold tracking-widest text-accent/80 uppercase mb-4">
-                      MAN RESPONDS
-                    </h3>
-                    <p className="text-foreground/85 leading-relaxed italic">
-                      {station.manResponds}
-                    </p>
+                  <div className="space-y-3 bg-card/30 rounded-lg p-4 border border-border/40">
+                    <h4 className="text-sm font-semibold uppercase tracking-widest text-accent">Man Responds</h4>
+                    <p className="font-serif leading-relaxed text-foreground">{station.manResponds}</p>
                   </div>
 
-                  {/* Final Versicle and Response */}
-                  <div className="pt-6 border-t border-border/40 space-y-2 text-sm text-muted-foreground">
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold min-w-fit">V:</span>
-                      <span className="text-foreground/75">{station.finalVersicle}</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold min-w-fit">R:</span>
-                      <span className="text-foreground/75">{station.finalResponse}</span>
-                    </div>
+                  {/* Closing Versicle and Response */}
+                  <div className="space-y-2 border-t border-border/40 pt-4">
+                    <p className="text-sm"><span className="font-semibold">V.</span> {station.finalVersicle}</p>
+                    <p className="text-sm"><span className="font-semibold">R.</span> {station.finalResponse}</p>
                   </div>
 
                   {/* Hymn */}
-                  <div>
-                    <h3 className="font-serif text-sm font-semibold tracking-widest text-accent/80 uppercase mb-3">
-                      Hymn
-                    </h3>
-                    <p className="text-foreground/85 leading-relaxed italic">
-                      {station.hymn}
-                    </p>
+                  <div className="border-l-2 border-accent/50 pl-4">
+                    <p className="font-serif italic text-sm text-foreground">{station.hymn}</p>
                   </div>
                 </div>
               )}
             </div>
           ))}
-        </div>
+        </section>
 
-        {/* Closing */}
-        <div className="mt-20 rounded-lg border border-border/60 bg-card/50 p-12 text-center backdrop-blur-sm">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Completion</p>
-          <h2 className="font-serif text-3xl font-light mb-6">May you walk this journey with Christ</h2>
-          <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            You have walked the full path with Jesus from condemnation to resurrection. May this journey deepen your faith and draw you closer to the heart of Christ. Return to any station whenever you need spiritual renewal.
-          </p>
-        </div>
+        {/* Conclusion */}
+        <section className="pt-12 border-t border-border/40">
+          <div className="space-y-8">
+            <h2 className="text-sm uppercase tracking-widest text-accent text-center mb-8">Conclusion</h2>
+
+            <div className="bg-card/50 rounded-lg p-8 border border-border/40">
+              <h3 className="text-sm uppercase tracking-widest text-accent mb-4">Christ Speaks</h3>
+              <p className="font-serif text-lg leading-relaxed text-foreground">
+                You remember what I told you at the beginning? When you joined me on the way of my cross. I said:- "My life was incomplete until I crowned it with my death your fourteen steps will not be complete until you crown them with your life" Accept each moment that comes to you with faith and trust. All that happens to you has my mark on it, seek me not in far-away places. I am very close to you, your home, your working place, on the streets, the markets, at the playgrounds these are altars where you offer love and I am there with you I want you to live your life. So now! Take up your cross and follow me.
+              </p>
+            </div>
+
+            <div className="bg-card/50 rounded-lg p-8 border border-border/40">
+              <h3 className="text-sm uppercase tracking-widest text-accent mb-4">Prayer before a Crucifix</h3>
+              <p className="font-serif text-lg leading-relaxed text-foreground mb-6">
+                "O good and gentle Jesus, before thy face I humbly kneel and with the greatest fervor of spirit I beg and beseech of thee to implant firmly into my heart lively sentiments of faith, hope and charity; contrition for my sins and firm purpose of amendment.
+              </p>
+              <p className="font-serif text-lg leading-relaxed text-foreground">
+                Meanwhile, I meditate on thy five most precious wounds, having ever before my eyes the words of David, the prophet, concerning thee, my Jesus: 'they have pierced my hands and my feet, they have numbered all my bones."
+              </p>
+            </div>
+
+            <div className="space-y-4 border-l-2 border-accent/50 pl-6">
+              <div className="space-y-2">
+                <p className="text-sm"><span className="font-semibold">V.</span> Parce Domine,</p>
+                <p className="text-sm"><span className="font-semibold">R.</span> Parce populo tuo</p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-sm italic">Pie Jesu Domine;</p>
+                <p className="text-sm italic">Ne in aeternum irascaris nobis</p>
+                <p className="text-sm italic">Dona eis requiem sempiternam.</p>
+              </div>
+            </div>
+
+            <div className="bg-card/50 rounded-lg p-8 border border-border/40">
+              <h3 className="text-sm uppercase tracking-widest text-accent mb-4">The Blessing</h3>
+              <p className="font-serif text-lg leading-relaxed text-foreground">
+                May our Lord Jesus Christ, who was scourged for our sake, who carried his cross, and who was crucified for our sake, bless us in the name of the Father, and of the Son, and of the Holy Spirit Amen.
+              </p>
+            </div>
+
+            <div className="text-center pt-8">
+              <p className="text-center text-muted-foreground">Amen.</p>
+            </div>
+          </div>
+        </section>
       </main>
-
-      {/* Footer */}
-      <footer className="border-t border-border/40 bg-background/50 mt-20 py-12">
-        <div className="mx-auto max-w-4xl px-6">
-          <p className="text-center text-sm text-muted-foreground">
-            May this journey deepen your faith and draw you closer to the heart of Christ.
-          </p>
-        </div>
-      </footer>
     </div>
   )
 }
