@@ -111,9 +111,9 @@ export default function StationCard({
           <div className="border-l-2 border-accent/50 pl-4">
             <p
               style={{ whiteSpace: "pre-line" }}
-              className="font-serif italic text-sm text-foreground"
+              className="font-serif italic text-sm text-foreground leading-8"
             >
-              {station.hymn}
+              {station.hymn}lol
             </p>
           </div>
         </div>

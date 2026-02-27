@@ -13,7 +13,7 @@ export const stations = [
       "Lord Jesus, obedience cost you your life for me, it costs an act of will – no more and yet, how hard it is for me to bend remove the blinders from my eyes that I may see that it is you whom I obey in all who govern me Lord it is you",
     finalVersicle: "Have mercy on us O Lord",
     finalResponse: "Have mercy on us",
-    hymn: "Through her heart his sorrow sharing, \nall his bitter anguish bearing \nnow at length the sword had passed.",
+    hymn: "At the cross her station keeping, \nStood the mournful Mother weeping, \nClose to Jesus to the last.",
   },
   {
     number: 2,
@@ -29,7 +29,7 @@ export const stations = [
       "Lord Jesus, I take my daily cross I welcome the monotony, discomfort of all kinds, my disappointments, tensions, setback, cares, worries, all of them. I accept them remind me often that in carrying my cross, I am carrying yours with you.",
     finalVersicle: "Grant us your help, O Lord",
     finalResponse: "Grant us your help!",
-    hymn: "Oh, how sad and sore distressed \nwas that mother highly blessed \nOf the sole-begotten one!",
+    hymn: "Through her heart His sorrow sharing, \nAll His bitter anguish bearing, \nNow at length the Sword had passed.",
   },
   {
     number: 3,
@@ -45,7 +45,7 @@ export const stations = [
       "Lord Jesus, how can I refuse? I willingly accept my weakness irritation and my moods, my headaches and fatigues, my difficulties in work and home all my defects of body, mind and soul. These “handicaps” of my humanity are your will for me I accept them gladly after your fall, you picked yourself up now pick me up, Lord.",
     finalVersicle: "Grant us your help, O Lord!",
     finalResponse: "Grant us your help!",
-    hymn: "Christ above in torments hangs; \nshe – beneath beholds the pangs \nof her dying glorious son.",
+    hymn: "Oh, how sad and sore distressed, \nWas that mother highly blessed \nOf the sole-begotten one!",
   },
   {
     number: 4,
@@ -61,7 +61,7 @@ export const stations = [
       "Lord Jesus, it is harder to watch the pains of those we love than to bear our own pains. To carry my cross after you I too must stand and watch the suffering s of my dear ones. I must watch the poverty of my people, their tattered clothes, malnutrition, no water, no electricity, and what is more, less hope for the future. And, I must let them watch time too. I do believe for those who love you, all things work together unto good. They must.",
     finalVersicle: "Come to our aid, O Lord!",
     finalResponse: "Come to our aid.",
-    hymn: "Is there one who would not weep, \nwhelmed in miseries so deep \nChrist dear mother to behold?",
+    hymn: "Christ above in torments hangs. \nShe beneath beholds the pangs \nOf her dying glorious son.",
   },
   {
     number: 5,
@@ -77,7 +77,7 @@ export const stations = [
       "Lord, make me realise that each time I pick up an object off the floor, assist my colleagues in some small task, each time I lend my hand in anyway. It maters not to whom my name is Simon, and the kindness I extend to them I really give to you",
     finalVersicle: "Have mercy on us O Lord",
     finalResponse: "Have mercy on us",
-    hymn: "Can the human heart refrain /nfrom partaking in her pain, \nIn that Mother’s pain untold?",
+    hymn: "Is there one who would not weep, \nWhelmed in miseries so deep \nChrist's dear mother to behold?",
   },
   {
     number: 6,
@@ -93,7 +93,7 @@ export const stations = [
       "Lord, this is hard it needs courage and self sacrifice it is an uncomfortable job but I will not run away from it come and act in me and not in me alone – in all men so that we may reveal not your bloody but your glorious face on earth.",
     finalVersicle: "Have mercy on us O Lord",
     finalResponse: "Have mercy on us",
-    hymn: "Bruised, derided cursed, defiled, \nshe beheld her tender child \nAll with bloody scourges rent",
+    hymn: "Can the human heart refrain /nFrom partaking in her pain, \nIn that Mother’s pain untold?",
   },
   {
     number: 7,
@@ -109,7 +109,7 @@ export const stations = [
       "Difficulties remain difficult, Lord! When failure presses heavily on me and I am desolate, discouraged, stretch out your hand to lift me up. Alone, there is nothing I can do. With you, I can do all things, I will.",
     finalVersicle: "Come to our aid, o lord!",
     finalResponse: "Come to our aid.",
-    hymn: "For the sins of his own nation \nsaw him hang in desolation \nTill his spirit forth he sent.",
+    hymn: "Bruised, derided cursed, defiled. \nShe beheld her tender Child \nAll with bloody scourges rent.",
   },
   {
     number: 8,
@@ -125,7 +125,7 @@ export const stations = [
       "Lord, teach me, help me to learn, when I would snap at those who hurt me with their ridicule those who misunderstand me those whom I think hinder my progress with some misguided helpfulness. Those who intrude upon my privacy those who restrict my freedom and liberty. Then help me curb my tongue may gentleness become my cloak.",
     finalVersicle: "Have mercy on us O Lord",
     finalResponse: "Have mercy on us",
-    hymn: "O thou mother! Fount of love! \ntouch my spirit from above, \nmake my heart with thine accord.",
+    hymn: "For the sins of His own Nation \nSaw Him hang in desolation. \nTill His Spirit forth He sent.",
   },
   {
     number: 9,
@@ -141,7 +141,7 @@ export const stations = [
       "My Lord, after a moment’ rest you took off again and staggered on. I can do the same because my will is mine when all my strength is gone and guilt and self-reproach press me to earth and seem to hold me fast, when I am pressed down by the consideration that I am of a fallen race protect me from the sin of judas save me from despair Lord, never let me feel that any sin of mine is greater than your love. No matter what my past has been, I can begin anew.",
     finalVersicle: "Have mercy on us O Lord",
     finalResponse: "Have mercy on us",
-    hymn: "make me feel as thou hast felt; \nmake my soul to glow and melt \nWith the love of Christ my lord.",
+    hymn: "O thou mother, fount of love! \nTouch my spirit from above, \nMake my heart with thine accord.",
   },
   {
     number: 10,
@@ -157,7 +157,7 @@ export const stations = [
       "Lord, strip me of the craving for prestige position, wealth and priviledges. Root out of me all traces of envy of my neighbour who has more than i. release me from the vice of pride, my longing to exalt myself, teach me that there is something called humility may I be poor in spirit lord.",
     finalVersicle: "Come to our aid, O Lord!",
     finalResponse: "Come to our aid.",
-    hymn: "make me feel as thou hast felt; \nmake my soul to glow and melt \nWith the love of Christ my lord.",
+    hymn: "Make me feel as thou hast felt; \nMake my soul to glow and melt \nWith the love of Christ my lord.",
   },
   {
     number: 11,
@@ -173,7 +173,7 @@ export const stations = [
       "My God am I worth all this? What can I give you in return? Here and now I accept for the rest of my life whatever sickness, torment, agony that will come to me you suffered to be my redeemer I will suffer to be a co-redeemer of my fellowmen.",
     finalVersicle: "Give us your help, O Lord",
     finalResponse: "Give us your help.",
-    hymn: "Holy Mother! Pierce me through \nin my heart each wound renew, \nof my saviour crucified.",
+    hymn: "Holy Mother! Pierce me through \nIn my heart each wound renew, \nOf my saviour crucified.",
   },
   {
     number: 12,
@@ -189,7 +189,7 @@ export const stations = [
       "Lord Jesus, what can I say or do? I offer you my death. I accept now the time and kind of death in store for me I offer you my death for my own sins and those of all my fellowmen.",
     finalVersicle: "Forgive us our sins, O Lord",
     finalResponse: "Forgive us our sins.",
-    hymn: "let me share with thee his pain \nwho for all my sins was slain \nWho for me in torments died.",
+    hymn: "Let me share with thee his pain \nWho for all my sins was slain \nWho for me in torments died.",
   },
   {
     number: 13,
@@ -205,7 +205,7 @@ export const stations = [
       "Lord, help me to accept the partings that must come from friends who go away, and most of all my dear ones when you shall call them to eternal life. Help me to get ready so that the D-Day whenever it comes will not be a shock to me",
     finalVersicle: "Have mercy on us O Lord",
     finalResponse: "Have mercy on us",
-    hymn: "let me mingle tears with thee, \nmourning him who mourned for me, \nall the days that I may live.",
+    hymn: "Let me mingle tears with thee, \nMourning him who mourned for me, \nAll the days that I may live.",
   },
   {
     number: 14,
@@ -221,6 +221,6 @@ export const stations = [
       "Lord Jesus, it is hard to be your apostle the demands are great. You have completed your work, what is left is mine, that of my fellowmen that of your church. The teachings you could not impart, let me impart. The sufferings you could not bear, let me bear. The work of love you could not do in you short life on earth. Let me do- all through you for you are all in all.",
     finalVersicle: "Come to our aid, O Lord",
     finalResponse: "Come to our aid.",
-    hymn: "by the cross with thee to stay; \nthere with thee to weep and pray, \nis all I ask thee to give.",
+    hymn: "By the cross with thee to stay; \nThere with thee to weep and pray, \nIs all I ask thee to give.",
   },
 ];
