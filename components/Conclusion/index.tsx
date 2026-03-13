@@ -64,7 +64,7 @@ export default function Conclusion() {
               aeternum, irascaris nobis /3ce
             </p>
             <p className="text-sm">
-              <span className="font-semibold">R.</span> Pie lesu Domine, dona
+              <span className="font-semibold">R.</span> Pie Iesu Domine, dona
               eis requiem, sempiternam. R: Jube, Domine benedicere.
             </p>
           </div>
