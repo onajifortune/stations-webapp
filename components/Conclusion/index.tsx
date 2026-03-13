@@ -5,7 +5,6 @@ export default function Conclusion() {
         <h2 className="text-sm uppercase tracking-widest text-accent text-center mb-8">
           Conclusion
         </h2>
-
         <div className="bg-card/50 rounded-lg p-8 border border-border/40">
           <h3 className="text-sm uppercase tracking-widest text-accent mb-4">
             Christ Speaks
@@ -23,12 +22,22 @@ export default function Conclusion() {
             and follow me.
           </p>
         </div>
-
         <div className="bg-card/50 rounded-lg p-8 border border-border/40">
           <h3 className="text-sm uppercase tracking-widest text-accent mb-4">
             Prayer before a Crucifix
           </h3>
           <p className="font-serif text-lg leading-relaxed text-foreground mb-6">
+            Behold, O kind and sweet Jesus, I cast myself upon my knees in Your
+            sight, and with the most fervent desire of my soul I pray and
+            beseech You to impress upon my heart lively sentiments of faith,
+            hope and charity, with true repentance for my sins and a firm desire
+            of amendment, while with deep affection and grief of soul I ponder
+            within myself and mentally contemplate Your five most precious
+            wounds, having before my eyes that which David spoke, in prophecy of
+            You, O good Jesus: "They pierced my hands and my feet, they have
+            numbered all my bones."
+          </p>
+          {/* <p className="font-serif text-lg leading-relaxed text-foreground mb-6">
             "O good and gentle Jesus, before thy face I humbly kneel and with
             the greatest fervor of spirit I beg and beseech of thee to implant
             firmly into my heart lively sentiments of faith, hope and charity;
@@ -39,25 +48,30 @@ export default function Conclusion() {
             before my eyes the words of David, the prophet, concerning thee, my
             Jesus: 'they have pierced my hands and my feet, they have numbered
             all my bones."
-          </p>
+          </p> */}
         </div>
-
+        <p className="text-sm">
+          <span className="font-semibold">For the Pope's intention:</span> Our
+          Father..... Hail Mary..... Glory be to the Father....
+        </p>
         <div className="space-y-4 border-l-2 border-accent/50 pl-6">
           <div className="space-y-2">
             <p className="text-sm">
               <span className="font-semibold">V.</span> Parce Domine,
             </p>
             <p className="text-sm">
-              <span className="font-semibold">R.</span> Parce populo tuo
+              <span className="font-semibold">R.</span> Parce Populo tuo, ne in
+              aeternum, irascaris nobis /3ce
+            </p>
+            <p className="text-sm">
+              <span className="font-semibold">R.</span> Pie lesu Domine, dona
+              eis requiem, sempiternam. R: Jube, Domine benedicere.
             </p>
           </div>
           <div className="space-y-2">
-            <p className="text-sm italic">Pie Jesu Domine;</p>
-            <p className="text-sm italic">Ne in aeternum irascaris nobis</p>
-            <p className="text-sm italic">Dona eis requiem sempiternam.</p>
+            <p className="text-sm italic">Jube, Domine benedicere.</p>
           </div>
         </div>
-
         <div className="bg-card/50 rounded-lg p-8 border border-border/40">
           <h3 className="text-sm uppercase tracking-widest text-accent mb-4">
             The Blessing
@@ -68,7 +82,6 @@ export default function Conclusion() {
             the name of the Father, and of the Son, and of the Holy Spirit Amen.
           </p>
         </div>
-
         <div className="text-center pt-8">
           <p className="text-center text-muted-foreground">Amen.</p>
         </div>
